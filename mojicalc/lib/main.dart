@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mojicalc/widgets/button.dart';
+import 'package:mojicalc/widgets/num_button.dart';
 
 void main() => runApp(Calculator());
 
@@ -59,32 +60,32 @@ class NumPad extends StatelessWidget {
         ),
         Row(
           children: <Widget>[
-            Button('7', onPressed: () {}),
-            Button('8', onPressed: () {}),
-            Button('9', onPressed: () {}),
+            NumButton('7', onPressed: (n) {}),
+            NumButton('8', onPressed: (n) {}),
+            NumButton('9', onPressed: (n) {}),
             Button('x', onPressed: () {}),
           ],
         ),
         Row(
           children: <Widget>[
-            Button('4', onPressed: () {}),
-            Button('5', onPressed: () {}),
-            Button('6', onPressed: () {}),
+            NumButton('4', onPressed: (n) {}),
+            NumButton('5', onPressed: (n) {}),
+            NumButton('6', onPressed: (n) {}),
             Button('-', onPressed: () {}),
           ],
         ),
         Row(
           children: <Widget>[
-            Button('1', onPressed: () {}),
-            Button('2', onPressed: () {}),
-            Button('3', onPressed: () {}),
+            NumButton('1', onPressed: (n) {}),
+            NumButton('2', onPressed: (n) {}),
+            NumButton('3', onPressed: (n) {}),
             Button('+', onPressed: () {}),
           ],
         ),
         Row(
           children: <Widget>[
-            Button('0', flex: 2, onPressed: () {}),
-            Button('.', onPressed: () {}),
+            NumButton('0', flex: 2, onPressed: (n) {}),
+            NumButton('.', onPressed: (n) {}),
             Button('=', onPressed: () {}),
           ],
         ),
