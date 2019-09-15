@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mojicalc/widgets/button.dart';
-import 'package:mojicalc/widgets/num_button.dart';
-import 'package:mojicalc/widgets/operator_button.dart';
+import 'package:mojicalc/widgets/buttons.dart';
 
 void main() => runApp(Calculator());
 
@@ -56,37 +55,37 @@ class NumPad extends StatelessWidget {
             Button('AC', onPressed: () {}),
             Button('+/-', onPressed: () {}),
             Button('%', onPressed: () {}),
-            OperatorButton('/', onPressed: (op) {}),
+            operatorButton('/', onPressed: (op) {}),
           ],
         ),
         Row(
           children: <Widget>[
-            NumButton('7', onPressed: (n) {}),
-            NumButton('8', onPressed: (n) {}),
-            NumButton('9', onPressed: (n) {}),
-            OperatorButton('x', onPressed: (op) {}),
+            numButton('7', onPressed: (n) {}),
+            numButton('8', onPressed: (n) {}),
+            numButton('9', onPressed: (n) {}),
+            operatorButton('x', onPressed: (op) {}),
           ],
         ),
         Row(
           children: <Widget>[
-            NumButton('4', onPressed: (n) {}),
-            NumButton('5', onPressed: (n) {}),
-            NumButton('6', onPressed: (n) {}),
-            OperatorButton('-', onPressed: (op) {}),
+            numButton('4', onPressed: (n) {}),
+            numButton('5', onPressed: (n) {}),
+            numButton('6', onPressed: (n) {}),
+            operatorButton('-', onPressed: (op) {}),
           ],
         ),
         Row(
           children: <Widget>[
-            NumButton('1', onPressed: (n) {}),
-            NumButton('2', onPressed: (n) {}),
-            NumButton('3', onPressed: (n) {}),
-            OperatorButton('+', onPressed: (op) {}),
+            numButton('1', onPressed: (n) {}),
+            numButton('2', onPressed: (n) {}),
+            numButton('3', onPressed: (n) {}),
+            operatorButton('+', onPressed: (op) {}),
           ],
         ),
         Row(
           children: <Widget>[
-            NumButton('0', flex: 2, onPressed: (n) {}),
-            NumButton('.', onPressed: (n) {}),
+            numButton('0', flex: 2, onPressed: (n) {}),
+            numButton('.', onPressed: (n) {}),
             Button('=', onPressed: () {}),
           ],
         ),
