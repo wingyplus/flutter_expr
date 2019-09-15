@@ -24,6 +24,7 @@ class Button extends StatelessWidget {
     return Expanded(
       flex: flex,
       child: FlatButton(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
         color: this.color,
         textColor: this.textColor,
         padding: EdgeInsets.only(top: _paddingSize, bottom: _paddingSize),
