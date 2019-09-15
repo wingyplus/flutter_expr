@@ -94,20 +94,18 @@ class NumPad extends StatelessWidget {
 
 /// A wrapper button used in NumPad.
 class Button extends StatelessWidget {
-  VoidCallback onPressed;
-  int flex;
-  String _label;
+  final VoidCallback onPressed;
+  final int flex;
+  final String label;
 
   final double _paddingSize = 40;
 
   Button(
-    String label, {
+    this.label, {
     Key key,
     this.flex = 1,
     @required this.onPressed,
-  }) {
-    _label = label;
-  }
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -117,7 +115,7 @@ class Button extends StatelessWidget {
         padding: EdgeInsets.only(top: _paddingSize, bottom: _paddingSize),
         materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
         child: Text(
-          _label,
+          label,
           style: TextStyle(fontSize: 30),
         ),
         onPressed: () {
