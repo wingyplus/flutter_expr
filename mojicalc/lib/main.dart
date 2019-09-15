@@ -55,7 +55,7 @@ class NumPad extends StatelessWidget {
             commandButton('AC', onPressed: (cmd) {}),
             commandButton('+/-', onPressed: (cmd) {}),
             commandButton('%', onPressed: (cmd) {}),
-            operatorButton('/', onPressed: (op) {}),
+            operatorButton('÷', onPressed: (op) {}),
           ],
         ),
         Row(
@@ -63,7 +63,7 @@ class NumPad extends StatelessWidget {
             numButton('7', onPressed: (n) {}),
             numButton('8', onPressed: (n) {}),
             numButton('9', onPressed: (n) {}),
-            operatorButton('x', onPressed: (op) {}),
+            operatorButton('×', onPressed: (op) {}),
           ],
         ),
         Row(
